@@ -1,39 +1,58 @@
 # Jai Ashar
 
-I build consumer products and the infrastructure behind them. Currently building **[Vora](https://askvora.com)**; previously contributed to AI inference capabilities at AWS.
+I build products from the application down to the systems underneath. I've built an operating system in C, taught myself iOS to build a three-app chef service, developed luxury-goods valuation software, and contributed to AI inference infrastructure at AWS.
 
-## Public code
+Currently building **[Vora](https://askvora.com)**: proactive health AI that helps people notice useful things about their health without waiting for a question. Its foundation brings together workouts, nutrition, sleep, recovery, and wearable data, including Oura and Garmin.
 
-| Project | What I built | Stack |
-| --- | --- | --- |
-| **[Auricore Web](https://github.com/Jaiashar/auricore-web)** | Photo-based item identification, market-price research, and borrower/lender application flows | Next.js · TypeScript · Firebase |
-| **[Product Canonicalization](https://github.com/Jaiashar/product-canonicalization)** | Reconcile product listings with source-quality scoring, AI attribute extraction, enrichment, and duplicate review | Python · DynamoDB · Anthropic · CLIP |
-| **[Auricore Mobile](https://github.com/Jaiashar/auricore-mobile)** | Guided item intake, inventory, category-specific AI conversations, and payment onboarding | React Native · TypeScript |
-| **[Auricore Services](https://github.com/Jaiashar/auricore-services)** | API, payment integrations, shared transaction types, and catalog-ingestion components | Express · Firebase · Python |
+## Selected builds
 
-These are cleaned source snapshots of the Auricore project. Each repository includes implementation notes, setup instructions, contributor credit, and validation status. The mobile app is a historical codebase with documented remaining type-checking issues.
+### [PennOS · An operating system in C](https://github.com/Jaiashar/penn-os)
 
-## AWS contributions
+I built a Unix-like operating system as part of a Penn team project: **preemptive scheduling, process management, a shell, and a FAT-style filesystem**. It switches execution contexts, manages process priorities and state, handles signals, and reads and writes files through PennFAT. The instructional OS runs in Linux userspace using timer signals and `ucontext`.
+
+[Source and architecture](https://github.com/Jaiashar/penn-os) · [Build and validation](https://github.com/Jaiashar/penn-os/blob/main/VALIDATION.md)
+
+### [Ziffyn · At-home chef service](https://github.com/Jaiashar/ziffyn)
+
+I taught myself iOS development and built Ziffyn from scratch as **three connected applications: a marketplace app, a chef/driver app, and a consumer app**. The challenge was making the customer experience, marketplace, and service-provider experience work together as one product. This was a complete multi-app build, from learning a new platform to implementing the different sides of the service.
+
+[Project story and three-app overview](https://github.com/Jaiashar/ziffyn) · Case study; original source is not published.
+
+### [Auricore · Identify and price luxury goods](https://github.com/Jaiashar/auricore-web)
+
+Auricore helps answer **“What is this item, and what is it worth?”** A user starts with a photo or a manual description; the application identifies the item, finds comparable listings, and presents market-price research. The broader product includes inventory, mobile item intake, and borrower/lender application flows.
+
+I contributed across the web and mobile applications and built product-data pipelines behind the catalog. The public code covers the user experience and the work of collecting, structuring, and matching inconsistent listings across marketplaces.
+
+| Component | What it does |
+| --- | --- |
+| [Web application](https://github.com/Jaiashar/auricore-web) | Photo identification, comparable-listing research, valuation results and application intake |
+| [Mobile application](https://github.com/Jaiashar/auricore-mobile) | Guided item intake, inventory, category-specific AI conversations and payment onboarding |
+| [Product ingestion](https://github.com/Jaiashar/luxury-product-ingestion) | Multi-site listing collection, AI categorization, image processing and catalog storage |
+| [Product canonicalization](https://github.com/Jaiashar/product-canonicalization) | Product matching, attribute extraction, enrichment and duplicate review |
+| [Supporting services](https://github.com/Jaiashar/auricore-services) | API, payments and shared transaction types |
+
+These are documented historical source snapshots with collaborator credits and validation notes.
+
+### [PennShell · A Unix shell in C](https://github.com/Jaiashar/penn-shell)
+
+A shell with **pipelines, I/O redirection, process groups, signal handling, and foreground/background jobs**. Mytreyi Narayanaswamy and I pair-programmed it, contributing roughly equally. It implements the process and terminal control behind commands such as `printf hello | wc -c`, `jobs`, `bg` and `fg`.
+
+[Source, build instructions and examples](https://github.com/Jaiashar/penn-shell)
+
+### Fine-wine traceability · Blockchain and IoT
+
+I architected and developed an operational supply-chain platform connecting a custom blockchain network API with IoT trackers monitoring **temperature, humidity, and light exposure from vineyard to cellar**. It gave consumers, investors, distributors, and auction houses a shared way to verify wine provenance and storage conditions.
+
+## AWS infrastructure
 
 I contributed to these publicly documented capabilities:
 
-- **[Amazon SageMaker inference](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/)** — multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling.
-- **[Amazon Bedrock StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html)** — asynchronous model invocation.
+- **[Amazon SageMaker inference](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/):** deploying multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling.
+- **[Amazon Bedrock StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html):** asynchronous model invocation.
 
-## Research affiliations
+## Research and other systems work
 
-I'm also a member of **[Tréfo](https://github.com/Trefo)** and **[Open-UAV](https://github.com/Open-UAV)**.
+I'm also part of **[Tréfo](https://github.com/Trefo)** and **[Open-UAV](https://github.com/Open-UAV)**, spanning agricultural computer vision and drone simulation. Public work includes [AgDSS](https://github.com/Trefo/agdss), an agricultural image-annotation and decision-support platform, and Open-UAV's PX4/ROS/Gazebo simulation projects.
 
-- **[Tréfo / AgDSS](https://github.com/Trefo/agdss)**: agricultural decision support and image annotation for robotic sampling in precision agriculture.
-- **[Open-UAV](https://github.com/Open-UAV)**: cloud-based drone simulation and research using PX4, ROS, and Gazebo.
-
-## Other work
-
-**[Vora](https://askvora.com)**  
-Proactive health AI grounded in workouts, nutrition, sleep, recovery, and wearable integrations including Oura and Garmin. I've built the proactive AI foundation and am developing a new experience that helps people notice useful things about their health without waiting for a question.
-
-**Ziffyn**  
-An at-home chef service I built while teaching myself iOS development: a marketplace app, a chef/driver app, and a consumer app working together.
-
-**Fine-wine traceability**  
-A supply-chain platform I architected and developed, connecting a custom blockchain network API with IoT trackers monitoring temperature, humidity, and light exposure from vineyard to cellar.
+[More research and team-project context](research-and-systems.md)
