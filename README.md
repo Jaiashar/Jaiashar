@@ -30,7 +30,7 @@ Computer-vision models and fruit-counting research at Penn. The team's implement
 
 [Source and demo](https://github.com/Jaiashar/grasp-fruit-counting) · [Research walkthrough](research-and-systems.md)
 
-## Applications and data pipelines
+## Other
 
 **[Ziffyn](https://github.com/Jaiashar/ziffyn).** Three connected apps for a home-chef marketplace: consumer, marketplace, and chef/driver. I learned iOS from scratch and built the apps around California's MEHKO opportunity; we recruited hundreds of chefs. The repository documents the product and architecture as a case study.
 
