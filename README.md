@@ -1,6 +1,6 @@
 # Jai Ashar
 
-I build products from the application down to the systems underneath. I've built an operating system in C, taught myself iOS to build a three-app chef service, developed luxury-goods valuation software, and contributed to AI inference infrastructure at AWS.
+I build consumer products, operating systems, and the infrastructure that connects them. I've built an operating system in C, taught myself iOS to build a three-app chef service, developed luxury-goods valuation software, and contributed to AI inference infrastructure at AWS.
 
 Currently building **[Vora](https://askvora.com)**: proactive health AI that helps people notice useful things about their health without waiting for a question. Its foundation brings together workouts, nutrition, sleep, recovery, and wearable data, including Oura and Garmin.
 
@@ -14,7 +14,7 @@ I built a Unix-like operating system as part of a Penn team project: **preemptiv
 
 ### [Ziffyn · At-home chef service](https://github.com/Jaiashar/ziffyn)
 
-I taught myself iOS development and built Ziffyn from scratch as **three connected applications: a marketplace app, a chef/driver app, and a consumer app**. The challenge was making the customer experience, marketplace, and service-provider experience work together as one product. This was a complete multi-app build, from learning a new platform to implementing the different sides of the service.
+I taught myself iOS development and built Ziffyn from scratch as **three connected applications: a marketplace app, a chef/driver app, and a consumer app**. The work spanned the different people involved in the service, from customers to the chefs and drivers fulfilling it. I learned the platform while carrying the implementation across all three applications.
 
 [Project story and three-app overview](https://github.com/Jaiashar/ziffyn) · Case study; original source is not published.
 
