@@ -1,8 +1,25 @@
 # Jai Ashar
 
-I build consumer products, operating systems, and the infrastructure that connects them. I've built an operating system in C, taught myself iOS to build a three-app chef service, developed luxury-goods valuation software, and contributed to AI inference infrastructure at AWS.
+I'm the cofounder of **[Vora](https://askvora.com)**. Previously, I built machine-learning inference infrastructure at **AWS**, working on **Amazon SageMaker and Amazon Bedrock**. My work spans consumer products, model deployment, and systems programming.
 
-Currently building **[Vora](https://askvora.com)**: proactive health AI that helps people notice useful things about their health without waiting for a question. Its foundation brings together workouts, nutrition, sleep, recovery, and wearable data, including Oura and Garmin.
+## Vora · A proactive personal health AI agent
+
+We're building Vora to investigate what's affecting your health and progress, start conversations before you know what to ask, and follow up as you make changes. The agent will bring together wearables, blood work, meals, supplements, and health history, explain what it notices, ask for missing context, and help you decide what to change.
+
+Our iOS and Android apps are live. We've built the connected-data foundation, proactive AI, knowledge graphs, and algorithms for identifying trends and relationships in health data. We're now developing the primary experience around **text and voice through iMessage, WhatsApp, and calls**, with explanations, graphs, recommendations, and follow-ups in the conversation.
+
+[Explore Vora](https://askvora.com) · [iOS app](https://apps.apple.com/us/app/vora-health/id6754351240)
+
+## AWS · Machine-learning inference infrastructure
+
+At AWS, I built infrastructure for **SageMaker and Bedrock**, including asynchronous model hosting for long-running workloads. I also worked directly with enterprise customers to develop, train, and optimize models using **PyTorch and Hugging Face**, working through tradeoffs in model quality, training time, memory requirements, and inference cost.
+
+| Work | Capability | Public reference |
+| --- | --- | --- |
+| **SageMaker inference** | Host multiple foundation models on shared endpoints with per-model resource allocation and independent scaling | [Launch announcement](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/) |
+| **Bedrock asynchronous invocation** | Start model work asynchronously and track the invocation separately from the initial request | [StartAsyncInvoke API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html) |
+
+[Engineering case study](https://github.com/Jaiashar/aws-inference)
 
 ## Selected builds
 
@@ -43,13 +60,6 @@ A shell with **pipelines, I/O redirection, process groups, signal handling, and 
 ### Fine-wine traceability · Blockchain and IoT
 
 I architected and developed an operational supply-chain platform connecting a custom blockchain network API with IoT trackers monitoring **temperature, humidity, and light exposure from vineyard to cellar**. It gave consumers, investors, distributors, and auction houses a shared way to verify wine provenance and storage conditions.
-
-## AWS infrastructure
-
-I contributed to these publicly documented capabilities:
-
-- **[Amazon SageMaker inference](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/):** deploying multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling.
-- **[Amazon Bedrock StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html):** asynchronous model invocation.
 
 ## Research and other systems work
 
