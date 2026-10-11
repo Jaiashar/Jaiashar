@@ -1,6 +1,6 @@
 # Jai Ashar
 
-I build machine-learning infrastructure, systems software, and consumer applications. I'm the cofounder of **Vora**. Previously, I helped build **SageMaker inference components** and **Bedrock asynchronous inference** at AWS, and worked on computer vision at Penn's **GRASP Lab**.
+I build machine-learning infrastructure, systems software, and consumer applications. I'm the cofounder of **Vora**. Previously, I led architecture and implementation of **SageMaker inference components** across teams and built **Bedrock asynchronous model-hosting infrastructure** at AWS. My research includes computer vision at Penn's **GRASP Lab**.
 
 [Website and background](https://jaiashar.com/) · [LinkedIn](https://www.linkedin.com/in/jaiashar/) · [Email](mailto:jai.k.ashar@gmail.com)
 
@@ -20,7 +20,7 @@ A Unix shell in C with pipelines, I/O redirection, process groups, signal handli
 
 ### [AWS inference infrastructure](https://github.com/Jaiashar/aws-inference)
 
-Helped architect SageMaker inference components and led implementation across teams, enabling models to share endpoint compute with per-model resource reservations and independent scaling. Built asynchronous model-hosting infrastructure for Bedrock and worked with enterprise customers to train and optimize models using PyTorch and Hugging Face.
+Led architecture and implementation of SageMaker inference components across teams, enabling models to share endpoint compute with per-model resource reservations and independent scaling. Built asynchronous model-hosting infrastructure for Bedrock and worked with enterprise customers to train and optimize models using PyTorch and Hugging Face.
 
 [Architecture case study](https://github.com/Jaiashar/aws-inference) · [SageMaker launch](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/) · [Bedrock API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html)
 
@@ -32,9 +32,9 @@ Computer-vision models and fruit-counting research at Penn. The team's implement
 
 ## Other
 
-**[Ziffyn](https://github.com/Jaiashar/ziffyn).** Three connected apps for a home-chef marketplace: consumer, marketplace, and chef/driver. I learned iOS from scratch and built the apps around California's MEHKO opportunity; we recruited hundreds of chefs. The repository documents the product and architecture as a case study.
+**[Ziffyn](https://github.com/Jaiashar/ziffyn).** Cofounded a home-chef marketplace built around California's MEHKO framework for permitted home-kitchen businesses. We recruited hundreds of chefs; I taught myself iOS and built the consumer, marketplace, and chef/driver apps from scratch. The repository documents the product and architecture as a case study.
 
-**[Auricore](https://github.com/Jaiashar/auricore-web).** Contributed to photo-based item-identification and pricing applications, and built Python pipelines for catalog ingestion and matching. Public source covers the historical web application, [multi-site product ingestion](https://github.com/Jaiashar/luxury-product-ingestion), and [catalog canonicalization](https://github.com/Jaiashar/product-canonicalization).
+**[Auricore](https://github.com/Jaiashar/auricore-web).** Cofounded a platform for identifying and pricing luxury goods from photos. Built web and mobile product experiences and Python pipelines for product ingestion and catalog matching. Public source covers the historical web application, [multi-site product ingestion](https://github.com/Jaiashar/luxury-product-ingestion), and [catalog canonicalization](https://github.com/Jaiashar/product-canonicalization).
 
 **Fine-wine traceability.** Architected and built a supply-chain platform connecting a blockchain network API with IoT sensors for temperature, humidity, and light exposure from vineyard to cellar.
 
