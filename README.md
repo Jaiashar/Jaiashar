@@ -1,40 +1,26 @@
 # Jai Ashar
 
-I build consumer products and the infrastructure behind them. Currently building [Vora](https://askvora.com). My work spans mobile apps, AI inference, marketplaces, and connected sensors.
+Building **[Vora](https://askvora.com)**. I've built mobile apps, marketplaces, and supply-chain software, and contributed to AI inference infrastructure at AWS.
 
-## Selected work
+## What I've built
 
-### Vora
+**Vora · Proactive health AI**  
+Helping people notice useful things about their health without waiting for a question. I've built the proactive AI foundation and am developing a new insight experience, grounded in workouts, nutrition, sleep, recovery, and wearable integrations including Oura and Garmin. [Explore Vora →](https://askvora.com)
 
-Vora is built around helping people notice useful things about their health without having to ask. I've built the proactive AI foundation and am developing a new insight experience on top of it.
+**Auricore · Item valuation and marketplace software**  
+A Next.js application with photo-based item identification, market-price research, and borrower and lender flows. The broader project includes a React Native app for inventory, item intake, and category-specific AI conversations. I contributed across the web and mobile applications.
 
-The product brings together workouts, nutrition, sleep, and recovery, with wearable integrations including Oura and Garmin.
+**Ziffyn · At-home chef service**  
+I taught myself iOS development to build three connected applications from scratch: a marketplace app, a chef/driver app, and a consumer app.
 
-[Explore Vora](https://askvora.com)
+**Fine-wine traceability · Blockchain and IoT**  
+I architected and developed a supply-chain platform connecting a custom blockchain network API with trackers monitoring temperature, humidity, and light exposure from vineyard to cellar.
 
-### AWS inference infrastructure
+## AWS contributions
 
-I contributed to Amazon SageMaker's new inference capabilities and Amazon Bedrock's asynchronous model invocation API.
+I contributed to these publicly documented capabilities:
 
-- [SageMaker inference launch](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/): deploy multiple foundation models on a shared endpoint, allocate resources per model, and scale them independently.
-- [Bedrock StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html): start asynchronous model invocations with a configured output destination.
-
-### Ziffyn
-
-An at-home chef service I built from scratch while teaching myself iOS development.
-
-The system had three connected applications:
-
-- A marketplace app
-- A chef/driver app
-- A consumer app
-
-My work covered building the applications and making the three sides work together.
-
-[Ziffyn on GitHub](https://github.com/Ziffyn)
-
-### Fine-wine traceability
-
-I architected and developed a working supply-chain platform connecting a custom blockchain network API with physical IoT trackers.
-
-The trackers continuously monitored temperature, humidity, and light exposure from vineyard to cellar. The platform gave consumers, investors, distributors, and auction houses a shared record of provenance and storage conditions.
+| Project | Capability | Public reference |
+| --- | --- | --- |
+| Amazon SageMaker | Multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling | [Launch announcement](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/) |
+| Amazon Bedrock | Asynchronous model invocation through `StartAsyncInvoke` | [API documentation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html) |
