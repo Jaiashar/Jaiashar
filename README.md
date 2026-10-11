@@ -1,26 +1,31 @@
 # Jai Ashar
 
-Building **[Vora](https://askvora.com)**. I've built mobile apps, marketplaces, and supply-chain software, and contributed to AI inference infrastructure at AWS.
+I build consumer products and the infrastructure behind them. Currently building **[Vora](https://askvora.com)**; previously contributed to AI inference capabilities at AWS.
 
-## What I've built
+## Public code
 
-**Vora · Proactive health AI**  
-Helping people notice useful things about their health without waiting for a question. I've built the proactive AI foundation and am developing a new insight experience, grounded in workouts, nutrition, sleep, recovery, and wearable integrations including Oura and Garmin. [Explore Vora →](https://askvora.com)
+| Project | What I built | Stack |
+| --- | --- | --- |
+| **[Auricore Web](https://github.com/Jaiashar/auricore-web)** | Photo-based item identification, market-price research, and borrower/lender application flows | Next.js · TypeScript · Firebase |
+| **[Auricore Mobile](https://github.com/Jaiashar/auricore-mobile)** | Guided item intake, inventory, category-specific AI conversations, and payment onboarding | React Native · TypeScript |
+| **[Auricore Services](https://github.com/Jaiashar/auricore-services)** | API, payment integrations, shared transaction types, and catalog-ingestion components | Express · Firebase · Python |
 
-**Auricore · Item valuation and marketplace software**  
-A Next.js application with photo-based item identification, market-price research, and borrower and lender flows. The broader project includes a React Native app for inventory, item intake, and category-specific AI conversations. I contributed across the web and mobile applications.
-
-**Ziffyn · At-home chef service**  
-I taught myself iOS development to build three connected applications from scratch: a marketplace app, a chef/driver app, and a consumer app.
-
-**Fine-wine traceability · Blockchain and IoT**  
-I architected and developed a supply-chain platform connecting a custom blockchain network API with trackers monitoring temperature, humidity, and light exposure from vineyard to cellar.
+These are cleaned source snapshots of the Auricore project. Each repository includes implementation notes, setup instructions, contributor credit, and validation status. The mobile app is a historical codebase with documented remaining type-checking issues.
 
 ## AWS contributions
 
 I contributed to these publicly documented capabilities:
 
-| Project | Capability | Public reference |
-| --- | --- | --- |
-| Amazon SageMaker | Multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling | [Launch announcement](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/) |
-| Amazon Bedrock | Asynchronous model invocation through `StartAsyncInvoke` | [API documentation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html) |
+- **[Amazon SageMaker inference](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/)** — multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling.
+- **[Amazon Bedrock StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html)** — asynchronous model invocation.
+
+## Other work
+
+**[Vora](https://askvora.com)**  
+Proactive health AI grounded in workouts, nutrition, sleep, recovery, and wearable integrations including Oura and Garmin. I've built the proactive AI foundation and am developing a new experience that helps people notice useful things about their health without waiting for a question.
+
+**Ziffyn**  
+An at-home chef service I built while teaching myself iOS development: a marketplace app, a chef/driver app, and a consumer app working together.
+
+**Fine-wine traceability**  
+A supply-chain platform I architected and developed, connecting a custom blockchain network API with IoT trackers monitoring temperature, humidity, and light exposure from vineyard to cellar.
