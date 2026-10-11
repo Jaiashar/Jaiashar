@@ -21,6 +21,22 @@ At AWS, I built infrastructure for **SageMaker and Bedrock**, including asynchro
 
 [Engineering case study](https://github.com/Jaiashar/aws-inference)
 
+## Technical reading map
+
+```mermaid
+flowchart LR
+    Work[Engineering portfolio] --> Infra[AWS inference case study]
+    Work --> Systems[Systems in C]
+    Systems --> OS[PennOS scheduler and filesystem]
+    Systems --> Shell[PennShell processes and job control]
+    Work --> Products[Products and marketplaces]
+    Products --> Ziffyn[Ziffyn three-app product case study]
+    Products --> Auricore[Auricore web, mobile and services]
+    Auricore --> Data[Ingestion and catalog canonicalization]
+```
+
+For implementation depth, start with [PennOS](https://github.com/Jaiashar/penn-os) and its scheduler/filesystem walkthrough, then [PennShell](https://github.com/Jaiashar/penn-shell) for process and terminal control. For application architecture, follow [Auricore Web](https://github.com/Jaiashar/auricore-web) into the mobile, service, and data repositories. AWS and Ziffyn are explicitly labeled case studies; their original implementation source is not included.
+
 ## Selected builds
 
 ### [PennOS · An operating system in C](https://github.com/Jaiashar/penn-os)
@@ -29,11 +45,11 @@ I built a Unix-like operating system as part of a Penn team project: **preemptiv
 
 [Source and architecture](https://github.com/Jaiashar/penn-os) · [Build and validation](https://github.com/Jaiashar/penn-os/blob/main/VALIDATION.md)
 
-### [Ziffyn · At-home chef service](https://github.com/Jaiashar/ziffyn)
+### [Ziffyn · Home-chef marketplace](https://github.com/Jaiashar/ziffyn)
 
-I taught myself iOS development and built Ziffyn from scratch as **three connected applications: a marketplace app, a chef/driver app, and a consumer app**. The work spanned the different people involved in the service, from customers to the chefs and drivers fulfilling it. I learned the platform while carrying the implementation across all three applications.
+We built Ziffyn around the opportunity created by California's **Microenterprise Home Kitchen Operation (MEHKO)** framework: helping home chefs turn their cooking into a food business. We recruited **hundreds of chefs**, and I taught myself iOS to build **three connected applications: a consumer app, marketplace app, and chef/driver app**. The work combined building chef supply with implementing the customer and provider sides of the service.
 
-[Project story and three-app overview](https://github.com/Jaiashar/ziffyn) · Case study; original source is not published.
+[Business premise, application architecture, and source status](https://github.com/Jaiashar/ziffyn) · Case study; original app source has not yet been located for publication.
 
 ### [Auricore · Identify and price luxury goods](https://github.com/Jaiashar/auricore-web)
 
