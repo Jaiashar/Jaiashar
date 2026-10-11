@@ -1,6 +1,6 @@
 # Jai Ashar
 
-I'm the cofounder of **[Vora](https://askvora.com)**. Previously, I built machine-learning inference infrastructure at **AWS**, working on **Amazon SageMaker and Amazon Bedrock**. My work spans consumer products, model deployment, and systems programming.
+I'm the cofounder of **[Vora](https://askvora.com)**. Previously, I built machine-learning inference infrastructure at **AWS**, working on **Amazon SageMaker and Amazon Bedrock**. I also worked on computer-vision models and fruit-counting research at Penn's **[GRASP Lab](https://www.grasp.upenn.edu/)**. My work spans consumer products, machine learning, and systems programming.
 
 ## Vora · A proactive personal health AI agent
 
@@ -21,6 +21,14 @@ At AWS, I built infrastructure for **SageMaker and Bedrock**, including asynchro
 
 [Engineering case study](https://github.com/Jaiashar/aws-inference)
 
+## GRASP Lab · Computer vision and fruit counting
+
+At the University of Pennsylvania's **[GRASP Lab](https://www.grasp.upenn.edu/)**, I worked on **computer-vision models and fruit-counting research**. The agricultural vision work represented in [Tréfo](https://github.com/Trefo) spans image annotation, TensorFlow segmentation, and tracking fruit across image sequences to support counting and crop analysis.
+
+The research code includes VGG-based fully convolutional networks, optical flow, Kalman filtering, and Hungarian assignment for associating detections across frames. The technical walkthrough explains the team architecture, the counting logic, and the implementation status of the mobile/API prototype.
+
+[Research and architecture walkthrough](research-and-systems.md) · [Public AgDSS annotation code](https://github.com/Trefo/agdss)
+
 ## Technical reading map
 
 ```mermaid
@@ -29,6 +37,8 @@ flowchart LR
     Work --> Systems[Systems in C]
     Systems --> OS[PennOS scheduler and filesystem]
     Systems --> Shell[PennShell processes and job control]
+    Work --> Research[GRASP Lab agricultural computer vision]
+    Research --> Vision[Segmentation, tracking and fruit counting]
     Work --> Products[Products and marketplaces]
     Products --> Ziffyn[Ziffyn three-app product case study]
     Products --> Auricore[Auricore web, mobile and services]
@@ -77,8 +87,6 @@ A shell with **pipelines, I/O redirection, process groups, signal handling, and 
 
 I architected and developed an operational supply-chain platform connecting a custom blockchain network API with IoT trackers monitoring **temperature, humidity, and light exposure from vineyard to cellar**. It gave consumers, investors, distributors, and auction houses a shared way to verify wine provenance and storage conditions.
 
-## Research and other systems work
+## Other research and systems work
 
-I'm also part of **[Tréfo](https://github.com/Trefo)** and **[Open-UAV](https://github.com/Open-UAV)**, spanning agricultural computer vision and drone simulation. Public work includes [AgDSS](https://github.com/Trefo/agdss), an agricultural image-annotation and decision-support platform, and Open-UAV's PX4/ROS/Gazebo simulation projects.
-
-[More research and team-project context](research-and-systems.md)
+My [research notes](research-and-systems.md#open-uav-drone-simulation) also cover Open-UAV drone simulation, a virtual-memory project, and the broader Auricore team's analytics and pricing systems.
