@@ -2,7 +2,7 @@
 
 I worked on **computer-vision models and fruit-counting research at the University of Pennsylvania's [GRASP Lab](https://www.grasp.upenn.edu/)**. This page explains the agricultural vision work represented in [Tréfo](https://github.com/Trefo), followed by other research and systems projects.
 
-My contribution was to the computer-vision and fruit-counting research. The architecture below describes the broader team's implementation, including supporting annotation, tracking, and mobile components. Original repositories retain their contributors and upstream model credits.
+My contribution was to the computer-vision and fruit-counting research. The architecture below describes the broader team's implementation, including supporting annotation, tracking, and mobile components. The [public fruit-counting source release](https://github.com/Jaiashar/grasp-fruit-counting) now includes selected agricultural model and tracking code, an animated synthetic demo, tests, and explicit provenance. Original author headers and upstream licenses are preserved.
 
 ## Agricultural vision: from images to counts
 
@@ -30,7 +30,7 @@ The agricultural model code uses **TensorFlow 1.x** and a **VGG-19-initialized f
 
 The network subtracts the model's mean pixel values, extracts convolutional features, and combines coarse predictions with intermediate features through skip connections. Transposed convolutions restore spatial resolution, and an `argmax` over output logits produces the segmentation mask. The training implementation uses sparse softmax cross-entropy and Adam; inference restores saved checkpoints.
 
-The public [Tréfo FCN repository](https://github.com/Trefo/FCN.tensorflow) documents the upstream implementation and research it builds on. It is a general segmentation codebase; the agricultural adaptations are in the separate research repository.
+The public [Tréfo FCN repository](https://github.com/Trefo/FCN.tensorflow) documents the upstream implementation and research it builds on. It is a general segmentation codebase. The agricultural adaptations are now available in the [public historical segmentation source](https://github.com/Jaiashar/grasp-fruit-counting/tree/main/historical/segmentation).
 
 ### Tracking and counting
 
@@ -65,11 +65,11 @@ The related mobile prototype uses React Native's image picker to send a base64 i
 | --- | --- | --- |
 | Image annotation | AgDSS Django application and `webclient` | [Public repository](https://github.com/Trefo/agdss) |
 | General FCN implementation | TensorFlow segmentation with upstream references | [Public repository](https://github.com/Trefo/FCN.tensorflow) |
-| Agricultural segmentation | `FCN_Segmentation/FCNInference.py` | Original Tréfo research repository, currently private |
-| Tracking and counting | `scpye/track/fruit_tracker.py` and related tracking modules | Original Tréfo research repository, currently private |
+| Agricultural segmentation | Historical FCN training, inference, and data readers | [Public source extract](https://github.com/Jaiashar/grasp-fruit-counting/tree/main/historical/segmentation) |
+| Tracking and counting | Earlier fruit-tracking primitives and historical full tracker | [Runnable extract and documented demo](https://github.com/Jaiashar/grasp-fruit-counting) |
 | Mobile upload prototype | `agdss_mobile/ag_ui/App.js` and `fruit_count/views.py` | Original Tréfo research repository, currently private |
 
-The research snapshot includes legacy Python 2 and TensorFlow dependencies, datasets, and serialized outputs. This walkthrough is based on source inspection; it does not claim a reproduced training run or a measured accuracy result. Dataset and checkpoint availability would need to be established before providing a reproducible model evaluation.
+The original research snapshot includes legacy Python 2 and TensorFlow dependencies. The public release contains source only, plus newly generated synthetic assets; it excludes datasets, checkpoints, serialized outputs, and private history. Its tracking extract is tested on synthetic inputs, while the model remains historical source for inspection. The release selects the earlier fruit-tracking variant rather than the later trunk/localization variants. Neither this walkthrough nor the synthetic demo claims a reproduced training run or a measured field-accuracy result.
 
 ## Open-UAV: drone simulation
 

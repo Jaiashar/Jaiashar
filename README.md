@@ -20,7 +20,7 @@ The [SageMaker launch](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-ne
 
 At Penn's GRASP Lab, I worked on **computer-vision models and fruit-counting research**. The agricultural vision work represented in [Tréfo](https://github.com/Trefo) includes annotation, TensorFlow segmentation, and tracking across image sequences. The team's implementation combines fully convolutional networks, optical flow, Kalman filtering, and Hungarian assignment.
 
-The [research walkthrough](research-and-systems.md) explains the architecture, counting logic, and prototype limitations while retaining team and upstream credits. [AgDSS](https://github.com/Trefo/agdss) provides public annotation-tooling source.
+The public [GRASP fruit-counting repository](https://github.com/Jaiashar/grasp-fruit-counting) includes the historical agricultural FCN source, runnable tracking primitives, an animated synthetic demo, and automated tests. It explains my research role and preserves original team and upstream credits. The [research walkthrough](research-and-systems.md) covers the wider project; [AgDSS](https://github.com/Trefo/agdss) provides related annotation tooling.
 
 ## Selected builds
 
