@@ -6,7 +6,7 @@ I'm the cofounder of **[Vora](https://askvora.com)**. Previously, I built machin
 
 We're building Vora to investigate what's affecting your health and progress, start conversations before you know what to ask, and follow up as you make changes. The agent will bring together wearables, blood work, meals, supplements, and health history, explain what it notices, ask for missing context, and help you decide what to change.
 
-Our iOS and Android apps are live. We've built the connected-data foundation, proactive AI, knowledge graphs, and algorithms for identifying trends and relationships in health data. We're now developing the primary experience around **text and voice through iMessage, WhatsApp, and calls**, with explanations, graphs, recommendations, and follow-ups in the conversation.
+Our iOS and Android apps are live. We've built a connected health-data foundation through partnerships and integrations, along with proactive AI, knowledge graphs, and algorithms for identifying trends and relationships in that data. We're now developing the primary experience around **text and voice through iMessage, WhatsApp, and calls**, with explanations, graphs, recommendations, and follow-ups in the conversation.
 
 [Explore Vora](https://askvora.com) · [iOS app](https://apps.apple.com/us/app/vora-health/id6754351240)
 
