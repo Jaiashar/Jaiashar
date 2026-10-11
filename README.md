@@ -7,6 +7,7 @@ I build consumer products and the infrastructure behind them. Currently building
 | Project | What I built | Stack |
 | --- | --- | --- |
 | **[Auricore Web](https://github.com/Jaiashar/auricore-web)** | Photo-based item identification, market-price research, and borrower/lender application flows | Next.js · TypeScript · Firebase |
+| **[Product Canonicalization](https://github.com/Jaiashar/product-canonicalization)** | Reconcile product listings with source-quality scoring, AI attribute extraction, enrichment, and duplicate review | Python · DynamoDB · Anthropic · CLIP |
 | **[Auricore Mobile](https://github.com/Jaiashar/auricore-mobile)** | Guided item intake, inventory, category-specific AI conversations, and payment onboarding | React Native · TypeScript |
 | **[Auricore Services](https://github.com/Jaiashar/auricore-services)** | API, payment integrations, shared transaction types, and catalog-ingestion components | Express · Firebase · Python |
 
@@ -18,6 +19,13 @@ I contributed to these publicly documented capabilities:
 
 - **[Amazon SageMaker inference](https://aws.amazon.com/blogs/aws/amazon-sagemaker-adds-new-inference-capabilities-to-help-reduce-foundation-model-deployment-costs-and-latency/)** — multiple foundation models on shared endpoints, with per-model resource allocation and independent scaling.
 - **[Amazon Bedrock StartAsyncInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_StartAsyncInvoke.html)** — asynchronous model invocation.
+
+## Research affiliations
+
+I'm also a member of **[Tréfo](https://github.com/Trefo)** and **[Open-UAV](https://github.com/Open-UAV)**.
+
+- **[Tréfo / AgDSS](https://github.com/Trefo/agdss)**: agricultural decision support and image annotation for robotic sampling in precision agriculture.
+- **[Open-UAV](https://github.com/Open-UAV)**: cloud-based drone simulation and research using PX4, ROS, and Gazebo.
 
 ## Other work
 
